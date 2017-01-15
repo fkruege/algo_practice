@@ -27,7 +27,7 @@ public class QuickSort implements Sort {
         while (true) {
             // scan from left to right until I find an element
             // greater than a[lo]
-            while (a[lo] > a[++i]) {
+            while (a[lo] >= a[++i]) {
                 if (i == hi) {
                     break;
                 }
@@ -35,7 +35,7 @@ public class QuickSort implements Sort {
 
             // scan from right to left until I find an element
             // less than a[lo]
-            while (a[lo] < a[--j]) {
+            while (a[lo] <= a[--j]) {
                 if (j == lo) {
                     break;
                 }

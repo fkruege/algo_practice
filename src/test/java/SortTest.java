@@ -18,6 +18,7 @@ public class SortTest {
         test_sort2();
         test_sort3();
         test_sort4();
+        test_sort5();
         test_random();
 
     }
@@ -48,11 +49,18 @@ public class SortTest {
         validateSort(a);
     }
 
-    private void test_random(){
+
+    private void test_sort5() {
+        int[] a = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+        _sort.sort(a);
+        validateSort(a);
+    }
+
+    private void test_random() {
         Random rnd = new Random();
         int size = 10000;
         int[] a = new int[size];
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             a[i] = rnd.nextInt();
         }
 
@@ -65,7 +73,7 @@ public class SortTest {
 
         for (int i = 0; i < a.length - 1; i++) {
             System.out.print(a[i] + ", ");
-            if(i == a.length - 2){
+            if (i == a.length - 2) {
                 System.out.print(a[i + 1]);
             }
             Assert.assertTrue(a[i] <= a[i + 1]);
