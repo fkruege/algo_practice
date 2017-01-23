@@ -14,7 +14,7 @@ public class SortTest {
     }
 
     public void runTestSuite() {
-        test_sort1();
+//        test_sort1();
         test_sort2();
         test_sort3();
         test_sort4();

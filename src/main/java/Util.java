@@ -9,5 +9,9 @@ public class Util {
         a[j] = save;
     }
 
+public static boolean less(int[] a, int j, int k){
+        return a[j] < a[k];
+    }
+
 
 }
