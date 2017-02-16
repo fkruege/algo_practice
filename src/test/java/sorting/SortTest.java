@@ -1,4 +1,7 @@
+package sorting;
+
 import org.junit.Assert;
+import sorting.Sort;
 
 import java.util.Random;
 

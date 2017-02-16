@@ -1,16 +1,18 @@
+package sorting;
+
 import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Created by fkruege on 1/15/17.
  */
-public class HeapSortTests {
+public class MergeSortTests {
 
-    private HeapSort2 _sort;
+    private MergeSort _sort;
 
     @Before
     public void before(){
-        _sort = new HeapSort2();
+        _sort = new MergeSort();
     }
 
     @Test
