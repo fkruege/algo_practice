@@ -16,5 +16,6 @@ public class StringTest {
         name2 = "jill";
 
         System.out.println("name1 is: " + name1);
+        System.out.println("name2 is: " + name2);
     }
 }
