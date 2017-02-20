@@ -1,3 +1,6 @@
+package factorial;
+
+import factorial.MyFactorial;
 import org.junit.Assert;
 import org.junit.Test;
 

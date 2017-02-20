@@ -1,3 +1,5 @@
+package factorial;
+
 /**
  * Created by fkruege on 2/18/2017.
  */

@@ -16,26 +16,38 @@ public class FindAllSubStringsPermutations implements IPermutations {
     public List<String> findAllSubStringPermutations(String input) {
         _permutations.clear();
 
-        for (int i = 1; i <= input.length(); i++) {
-            findSubStringPermutations("", input, i);
-        }
+        findSubStringPermutations("", input);
 
 
         return _permutations;
     }
 
-    private void findSubStringPermutations(String currentPerm, String input, int length) {
+    private void findSubStringPermutations(String currentPerm, String input) {
 
-        if (currentPerm.length() == length) {
-            _permutations.add(currentPerm);
+        if (currentPerm.length() == input.length()) {
+//            _permutations.add(currentPerm);
             return;
         }
 
         for (int i = 0; i < input.length(); i++) {
             String perm = currentPerm + input.charAt(i);
+            _permutations.add(perm);
             String substring = input.substring(0, i) + input.substring(i + 1, input.length());
-            findSubStringPermutations(perm, substring, length);
+            findSubStringPermutations(perm, substring);
         }
-
     }
+
+//    private void findSubStringPermutations(String currentPerm, String input, int length) {
+//
+//        if (currentPerm.length() == length) {
+//            _permutations.add(currentPerm);
+//            return;
+//        }
+//
+//        for (int i = 0; i < input.length(); i++) {
+//            String perm = currentPerm + input.charAt(i);
+//            String substring = input.substring(0, i) + input.substring(i + 1, input.length());
+//            findSubStringPermutations(perm, substring, length);
+//        }
+//    }
 }
