@@ -1,6 +1,8 @@
 package leetcode.FindFirstUniqueChar;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by fkruege on 2/17/2017.
@@ -8,6 +10,7 @@ import java.util.HashMap;
 public class HashTableUniqueChar implements IFindFirstUniqueChar{
 
     public char find(String input) {
+
 
         HashMap<Character, Integer> charHash = new HashMap<Character, Integer>();
 
