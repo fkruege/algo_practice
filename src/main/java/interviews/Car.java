@@ -17,11 +17,11 @@ public class Car {
 
     public static void main(String[] args){
         Car car = new Car("Oldsmobile");
-        improveCar(car);
+        upgradeCar(car);
         System.out.println("Car name: " + car.getCarName());
     }
 
-    public static void improveCar(Car car){
+    public static void upgradeCar(Car car){
         car = new Car("Tesla");
     }
 
