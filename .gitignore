@@ -3,6 +3,7 @@
 
 # User-specific stuff:
 .idea/
+.idea/modules/
 .idea/workspace.xml
 .idea/tasks.xml
 
